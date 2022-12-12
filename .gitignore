@@ -3,3 +3,8 @@
 /output
 /samples
 /log
+/visualization
+
+*.pyc
+*.pth
+*.png

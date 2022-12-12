@@ -6,13 +6,13 @@
 # ========================================= #
 #          OmniPose on MPII Dataset
 # ========================================= #
-# CFG='experiments/mpii/omnipose_w48_256x256.yaml'
+CFG='experiments/mpii/omnipose_w48_256x256.yaml'
 
 # ========================================= #
 #          OmniPose on COCO Dataset
 # ========================================= #
 # CFG='experiments/coco/omnipose_w48_128x96.yaml'
-CFG='experiments/coco/omnipose_w48_256x192.yaml'
+# CFG='experiments/coco/omnipose_w48_256x192.yaml'
 # CFG='experiments/coco/omnipose_w48_384x288.yaml'
 
 # ========================================= #

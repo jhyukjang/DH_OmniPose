@@ -125,8 +125,7 @@ TRAIN:
   NESTEROV: false
 TEST:
   BATCH_SIZE_PER_GPU: 16
-  # MODEL_FILE: 'weights/mpii/OmniPose_w48/checkpoint.pth'
-  MODEL_FILE: ''
+  MODEL_FILE: './checkpoint.pth'
   FLIP_TEST: true
   POST_PROCESS: true
   BLUR_KERNEL: 11

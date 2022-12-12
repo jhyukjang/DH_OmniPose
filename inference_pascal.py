@@ -170,7 +170,7 @@ def plot_COCO_image(preds, img_path, save_path, link_pairs, ring_color, color_id
     plt.subplots_adjust(top=1,bottom=0,left=0,right=1,hspace=0,wspace=0)        
     plt.margins(0,0)
     print(save_path)
-    plt.savefig(save_path, format='jpg', bbox_inckes='tight', dpi=100)
+    plt.savefig(save_path, format='jpg', bbox_inches='tight', dpi=100)
     plt.close()
 
 
@@ -252,10 +252,11 @@ def main(args):
     model.eval()
 
 
-    files_loc = '../data_pascal/PPP/val/image'
+    files_loc = '../datasets/Pascal Part Person/val/image'
+    save_path = './visualization/pascal'
+    if not os.path.exists(save_path):
+        os.makedirs(save_path)
     images = os.listdir(files_loc)
-
-    import pdb; pdb.set_trace()
 
     for idx in range(len(images)):
         print(idx,"/",len(images))
@@ -277,8 +278,9 @@ def main(args):
         preds, maxvals = get_final_preds_no_transform(cfg, outputs.detach().cpu().numpy())
 
         colorstyle = artacho_style
-        plot_COCO_image(4*preds, img_path, './samples/pascal_coco_pretrained/'+images[idx], colorstyle.link_pairs, colorstyle.ring_color, colorstyle.color_ids, save=True)
-        pdb.set_trace()
+        
+        plot_COCO_image(4*preds, img_path, './visualization/pascal/'+images[idx], colorstyle.link_pairs, colorstyle.ring_color, colorstyle.color_ids, save=True)
+        # pdb.set_trace()
 
 if __name__ == '__main__': 
     arg = parse_args()
