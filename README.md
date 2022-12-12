@@ -22,7 +22,7 @@ pip install -r requirements.txt
 
 
 ### Structure
-Follow this structure:
+Download the checkpoint [here](https://drive.google.com/file/d/1cmrNHqCsuuwYohMUjqVdkYtXIxIuqSqw/view?usp=share_link), and follow this structure:
 ```
 |-- datasets
         |-- Pascal Part Person
