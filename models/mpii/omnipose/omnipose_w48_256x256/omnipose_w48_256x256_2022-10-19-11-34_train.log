@@ -1,0 +1,7 @@
+2022-10-19 11:34:25,800 
+Total Parameters: 68,151,868
+----------------------------------------------------------------------------------------------------------------------------------
+Total Multiply Adds (For Convolution and Linear Layers only): 22.750078439712524 GFLOPs
+----------------------------------------------------------------------------------------------------------------------------------
+Number of Layers
+Conv2d : 350 layers   BatchNorm2d : 361 layers   ReLU : 328 layers   Bottleneck : 4 layers   BasicBlock : 104 layers   ConvTranspose2d : 47 layers   HighResolutionModule : 8 layers   SepConv2d : 4 layers   _AtrousModule : 4 layers   AdaptiveAvgPool2d : 1 layers   WASPv2 : 1 layers   

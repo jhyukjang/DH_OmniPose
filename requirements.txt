@@ -1,0 +1,7 @@
+yacs==0.1.8
+tqdm==4.64.1
+Cython==0.29.32
+json-tricks==3.16.1
+scikit-learn==1.2.0
+scipy==1.9.3
+pycocotools==2.0.6
